@@ -1,0 +1,19 @@
+version: "3.7"
+services:
+  nginx-proxy:
+    image: jwilder/nginx-proxy:alpine
+    ports:
+      - "80:80"
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+
+  webapp:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    environment:
+      - PORT=3001
+      - VIRTUAL_HOST=localhost
+      - VIRTUAL_PORT=8000
+    ports:
+      - "8000:8000"

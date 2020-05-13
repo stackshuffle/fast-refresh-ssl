@@ -1,0 +1,52 @@
+{
+  "name": "fast-refresh-demo",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.7.0",
+    "@testing-library/react": "^10.0.4",
+    "@testing-library/user-event": "^10.2.0",
+    "dotenv": "^8.2.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1",
+    "rimraf": "^3.0.2",
+    "serve": "^11.3.0",
+    "shelljs": "^0.8.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "build:fab": "npm run build && npm run fab:build",
+    "fab:build": "fab build",
+    "fab:serve": "fab serve fab.zip",
+    "serve": "serve -s -l 8000 --ssl-cert ssl/certs/localhost.crt --ssl-key ssl/certs/localhost.key build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@fab/actions": "^0.2.6",
+    "@fab/cli": "^0.2.6",
+    "@fab/input-static": "^0.2.6",
+    "@fab/plugin-render-html": "^0.2.6",
+    "@fab/plugin-rewire-assets": "^0.2.6",
+    "@fab/server": "^0.2.6",
+    "snowpack": "^1.7.1",
+    "sync-dotenv": "^2.6.1"
+  }
+}
