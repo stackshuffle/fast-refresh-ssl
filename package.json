@@ -6,8 +6,11 @@
     "@testing-library/jest-dom": "^5.7.0",
     "@testing-library/react": "^10.0.4",
     "@testing-library/user-event": "^10.2.0",
+    "customize-cra": "^0.9.1",
+    "customize-cra-react-refresh": "^1.0.1",
     "dotenv": "^8.2.0",
     "react": "^16.13.1",
+    "react-app-rewired": "^2.1.6",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
     "rimraf": "^3.0.2",
@@ -40,12 +43,12 @@
     ]
   },
   "devDependencies": {
-    "@fab/actions": "^0.2.6",
-    "@fab/cli": "^0.2.6",
-    "@fab/input-static": "^0.2.6",
-    "@fab/plugin-render-html": "^0.2.6",
-    "@fab/plugin-rewire-assets": "^0.2.6",
-    "@fab/server": "^0.2.6",
+    "@fab/actions": "^1.0.0-rc.1",
+    "@fab/cli": "^1.0.0-rc.1",
+    "@fab/input-static": "^1.0.0-rc.1",
+    "@fab/plugin-render-html": "^1.0.0-rc.1",
+    "@fab/plugin-rewire-assets": "^1.0.0-rc.1",
+    "@fab/server": "^1.0.0-rc.1",
     "snowpack": "^1.7.1",
     "sync-dotenv": "^2.6.1"
   }
