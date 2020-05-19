@@ -15,14 +15,14 @@
     "shelljs": "^0.8.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
     "build:fab": "yarn build && yarn fab:build",
     "fab:build": "fab build",
     "fab:serve": "fab serve fab.zip",
     "serve": "serve -s -l 8000 --ssl-cert ssl/certs/localhost.crt --ssl-key ssl/certs/localhost.key build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "react-app-rewired test",
+    "eject": "react-app-rewired eject"
   },
   "eslintConfig": {
     "extends": "react-app"
