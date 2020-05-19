@@ -26,5 +26,19 @@
     // However, we recommend automatic deploys (triggered by git push)
     // using a service such as Linc (https://linc.sh)
     // • See https://fab.dev/kb/automatic-deploys for setup instructions.
+    'aws-s3': {
+      access_key: '@S3_ACCESS_KEY',
+      secret_key: '@S3_SECRET_KEY',
+      region: 'us-east-1',
+      bucket_name: 'fab-assets-fast-refresh-example',
+    },
+    'cf-workers': {
+      account_id: '@CF_WORKERS_ACCOUNT_ID',
+      api_token: '@CF_WORKERS_API_TOKEN',
+      workers_dev: false,
+      script_name: 'fast-refresh-example',
+      zone_id: "@FAB_DEV_ZONE_ID",
+      routes: "https://fast-refresh-example.stackshuffle.io/*"
+    },
   }
 }

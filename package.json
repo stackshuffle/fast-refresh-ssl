@@ -45,11 +45,12 @@
   "devDependencies": {
     "@fab/actions": "^1.0.0-rc.1",
     "@fab/cli": "^1.0.0-rc.1",
+    "@fab/deployer-aws-s3": "^1.0.0-rc.1",
+    "@fab/deployer-cf-workers": "^1.0.0-rc.1",
     "@fab/input-static": "^1.0.0-rc.1",
     "@fab/plugin-render-html": "^1.0.0-rc.1",
     "@fab/plugin-rewire-assets": "^1.0.0-rc.1",
     "@fab/server": "^1.0.0-rc.1",
-    "snowpack": "^1.7.1",
     "sync-dotenv": "^2.6.1"
   }
 }
