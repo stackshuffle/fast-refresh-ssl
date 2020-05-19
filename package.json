@@ -17,7 +17,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "build:fab": "npm run build && npm run fab:build",
+    "build:fab": "yarn build && yarn fab:build",
     "fab:build": "fab build",
     "fab:serve": "fab serve fab.zip",
     "serve": "serve -s -l 8000 --ssl-cert ssl/certs/localhost.crt --ssl-key ssl/certs/localhost.key build",
